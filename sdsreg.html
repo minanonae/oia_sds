@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Output SDS Request | OIA Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="dashboard-body">
+
+    <div class="dashboard-container">
+        <div id="sidebar-placeholder"></div>
+
+        <main class="main-content">
+            
+            <header class="content-header table-header">
+                <div>
+                    <h2>Output SDS Request</h2>
+                </div>
+                <div>
+                    <button class="btn-back"><i class="fa-solid fa-arrow-left"></i> Back</button>
+                </div>
+            </header>
+
+            <div class="login-card search-card">
+                <h3 class="search-title">Search Criteria</h3>
+                <form class="search-form">
+                    <div class="search-form-grid-stacked">
+                        
+                        <div class="input-group-stacked">
+                            <label for="sdsLogDocId">SDSLog / DocID :</label>
+                            <input type="text" id="sdsLogDocId" placeholder="Enter ID...">
+                        </div>
+                        
+                        <div class="input-group-stacked date-group">
+                            <label for="dateOutputFrom">Date Output (From) :</label>
+                            <input type="date" id="dateOutputFrom" value="2026-01-01">
+                        </div>
+                        
+                        <div class="input-group-stacked date-group">
+                            <label for="dateTo">Date (To) :</label>
+                            <input type="date" id="dateTo" value="2026-03-09">
+                        </div>
+
+                        <div class="search-buttons-bottom">
+                            <button type="submit" class="btn-primary"><i class="fa-solid fa-magnifying-glass"></i> Search</button>
+                            <button type="reset" class="btn-secondary-light"><i class="fa-solid fa-rotate-left"></i> Clear</button>
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+
+            <div class="login-card table-card borderless-table">
+                <table class="data-table data-table-sds">
+                    <thead>
+                        <tr>
+                            <th>No.</th>
+                            <th>SDSLog</th>
+                            <th>Document ID</th>
+                            <th>Doc Rev</th>
+                            <th>Customer</th>
+                            <th>Country</th>
+                            <th>Keep Year</th>
+                            <th>Date Submit</th>
+                            <th>Remark</th>
+                            <th>Update By</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>1</td><td>LOG-00001</td><td>26</td><td><span class="docrev-text">1</span></td><td>AAA Company</td><td>Japan</td><td>3</td><td>2026-02-26 00:00:00</td><td>test load data</td><td>999999</td></tr>
+                        <tr><td>2</td><td>LOG-00002</td><td>37</td><td><span class="docrev-text">2</span></td><td>BBB Company</td><td>Thai</td><td>3</td><td>2026-02-26 00:00:00</td><td>test</td><td>999999</td></tr>
+                        <tr><td>3</td><td>LOG-00003</td><td>SDS-0003</td><td><span class="docrev-text">3</span></td><td>CCC Company</td><td>Japan</td><td>3</td><td>2026-02-26 00:00:00</td><td>test</td><td>999999</td></tr>
+                        <tr><td>4</td><td>LOG-00004</td><td>SDS-0004</td><td><span class="docrev-text">4</span></td><td>DDD Company</td><td>Thai</td><td>3</td><td>2026-02-27 00:00:00</td><td>test</td><td>999999</td></tr>
+                        <tr><td>5</td><td>LOG-00005</td><td>SDS-0005</td><td><span class="docrev-text">5</span></td><td>EEE Company</td><td>Japan</td><td>3</td><td>2026-02-27 00:00:00</td><td>test</td><td>999999</td></tr>
+                        <tr><td>6</td><td>LOG-00006</td><td>SDS-0009</td><td><span class="docrev-text">1</span></td><td>oia</td><td>thai</td><td>3</td><td>2026-02-28 20:15:37</td><td>test</td><td>999999</td></tr>
+                        <tr><td>7</td><td>LOG-00007</td><td>SDS-0009</td><td><span class="docrev-text">2</span></td><td>oia</td><td>th</td><td>3</td><td>2026-03-01 02:46:20</td><td>test</td><td>999999</td></tr>
+                        <tr><td>8</td><td>LOG-00008</td><td>SDS-0009</td><td><span class="docrev-text">3</span></td><td>oia</td><td>th</td><td>3</td><td>2026-03-01 03:21:14</td><td>test</td><td>999999</td></tr>
+                        <tr><td>9</td><td>LOG-00009</td><td>SDS-0009</td><td><span class="docrev-text">4</span></td><td>นรพ</td><td>ข้าหะ</td><td>3</td><td>2026-03-01 04:02:46</td><td>test</td><td>999999</td></tr>
+                        <tr><td>10</td><td>LOG-00010</td><td>SDS-0009</td><td><span class="docrev-text">5</span></td><td>oia</td><td>th</td><td>3</td><td>2026-03-01 18:38:21</td><td>test</td><td>999999</td></tr>
+                        <tr><td>11</td><td>LOG-00011</td><td>SDS-0009</td><td><span class="docrev-text">6</span></td><td>oia</td><td>jp</td><td>3</td><td>2026-03-01 18:45:06</td><td>test</td><td>999999</td></tr>
+                        <tr><td>12</td><td>LOG-00012</td><td>SDS-0009</td><td><span class="docrev-text">7</span></td><td>oia</td><td>th</td><td>3</td><td>2026-03-01 19:03:39</td><td>test</td><td>999999</td></tr>
+                        <tr><td>13</td><td>LOG-00013</td><td>SDS-0010</td><td><span class="docrev-text">1</span></td><td>oia</td><td>jpn</td><td>3</td><td>2026-03-01 19:07:04</td><td>test</td><td>999999</td></tr>
+                        <tr><td>14</td><td>LOG-00014</td><td>SDS-0010</td><td><span class="docrev-text">2</span></td><td>oia</td><td>th</td><td>3</td><td>2026-03-01 19:24:50</td><td>test</td><td>999999</td></tr>
+                    </tbody>
+                </table>
+                
+                <div class="pagination-container new-pagination-layout">
+                    <div class="pagination-items-per-page">
+                        <select id="itemsPerPage">
+                            <option value="20" selected>20</option>
+                        </select>
+                        <label for="itemsPerPage">items per page</label>
+                    </div>
+                    <div class="pagination-nav">
+                        <button class="pagination-btn"><i class="fa-solid fa-angles-left"></i></button>
+                        <button class="pagination-btn"><i class="fa-solid fa-angle-left"></i></button>
+                        <button class="pagination-btn active">1</button>
+                        <button class="pagination-btn">2</button>
+                        <button class="pagination-btn">3</button>
+                        <button class="pagination-btn">4</button>
+                        <button class="pagination-btn">5</button>
+                        <button class="pagination-btn"><i class="fa-solid fa-angle-right"></i></button>
+                        <button class="pagination-btn"><i class="fa-solid fa-angles-right"></i></button>
+                    </div>
+                    <div class="pagination-count">1 - 20 of 87 items</div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

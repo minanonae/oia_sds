@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OIA - SDS System</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="dashboard-body">
+
+    <div class="dashboard-container">
+        <div id="sidebar-placeholder"></div>
+
+        <main class="main-content">
+            
+            <header class="content-header table-header">
+                <div>
+                    <h2>ERP Import List</h2>
+                </div>
+            </header>
+
+            <div class="action-bar new-layout">
+                <a href="erp-import.html" class="btn-success-export">
+                    <i class="fa-solid fa-file-import"></i> Import
+                </a>
+            </div>
+
+            <div class="login-card search-card">
+                <form class="search-form">
+                    <div class="search-form-flex" style="justify-content: flex-start; gap: 20px; align-items: center;">
+                        <h3 class="search-title mb-0">Search Criteria</h3>
+                        
+                        <div class="input-group-horizontal">
+                            <label>Date Import :</label>
+                            <input type="date" class="w-200">
+                        </div>
+
+                        <div class="input-group-horizontal">
+                            <label>Status :</label>
+                            <select class="select-sm" style="min-width: 150px;">
+                                <option value="">Select All</option>
+                                <option value="Completed">Completed</option>
+                            </select>
+                        </div>
+
+                        <div class="search-buttons-right ml-auto">
+                            <button type="submit" class="btn-primary"><i class="fa-solid fa-magnifying-glass"></i> Search</button>
+                            <button type="button" class="btn-success-export"><i class="fa-solid fa-file-export"></i> Export</button>
+                            <button type="reset" class="btn-secondary-light"><i class="fa-solid fa-rotate-left"></i> Clear</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <div class="login-card table-card borderless-table">
+                <table class="data-table data-table-sds">
+                    <thead>
+                        <tr>
+                            <th>No.</th>
+                            <th>Date Import <i class="fa-solid fa-filter filter-icon"></i></th>
+                            <th>User <i class="fa-solid fa-filter filter-icon"></i></th>
+                            <th>Import Time <i class="fa-solid fa-filter filter-icon"></i></th>
+                            <th>CP Item <i class="fa-solid fa-filter filter-icon"></i></th>
+                            <th>FG Item <i class="fa-solid fa-filter filter-icon"></i></th>
+                            <th>FM Item <i class="fa-solid fa-filter filter-icon"></i></th>
+                            <th>RM Item <i class="fa-solid fa-filter filter-icon"></i></th>
+                            <th>Customer Item <i class="fa-solid fa-filter filter-icon"></i></th>
+                            <th>Status <i class="fa-solid fa-filter filter-icon"></i></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>1</td><td>2026-03-05 10:41:41</td><td>999999</td><td>1 Second</td><td>2815</td><td>3777</td><td>24</td><td>2260</td><td>2</td><td>Completed</td></tr>
+                        <tr><td>2</td><td>2026-03-05 10:39:18</td><td>999999</td><td>1 Second</td><td>2815</td><td>3777</td><td>24</td><td>2260</td><td>2</td><td>Completed</td></tr>
+                        <tr><td>3</td><td>2026-03-04 14:31:34</td><td>999999</td><td>1 Second</td><td>2815</td><td>3777</td><td>24</td><td>2260</td><td>2</td><td>Completed</td></tr>
+                        <tr><td>4</td><td>2026-03-04 14:15:33</td><td>999999</td><td>1 Second</td><td>2021</td><td>2981</td><td>24</td><td>2260</td><td>2</td><td>Completed</td></tr>
+                        <tr><td>5</td><td>2026-03-04 11:07:49</td><td>999999</td><td>1 Second</td><td>2021</td><td>2981</td><td>24</td><td>2260</td><td>2</td><td>Completed</td></tr>
+                        <tr><td>6</td><td>2026-02-27 09:54:31</td><td>999999</td><td>1 Second</td><td>2021</td><td>2981</td><td>24</td><td>2260</td><td>2</td><td>Completed</td></tr>
+                        <tr><td>7</td><td>2026-02-27 09:50:34</td><td>999999</td><td>1 Second</td><td>2021</td><td>2981</td><td>24</td><td>2260</td><td>2</td><td>Completed</td></tr>
+                        <tr><td>8</td><td>2026-02-27 09:47:21</td><td>999999</td><td>1 Second</td><td>2021</td><td>2981</td><td>24</td><td>2260</td><td>2</td><td>Completed</td></tr>
+                        <tr><td>9</td><td>2026-02-27 09:45:00</td><td>999999</td><td>1 Second</td><td>2021</td><td>2981</td><td>24</td><td>2260</td><td>0</td><td>Completed</td></tr>
+                        <tr><td>10</td><td>2026-02-27 09:43:57</td><td>999999</td><td>1 Second</td><td>2021</td><td>2981</td><td>24</td><td>2260</td><td>0</td><td>Completed</td></tr>
+                    </tbody>
+                </table>
+                
+                <div class="pagination-container new-pagination-layout pagination-left">
+                    <div class="pagination-nav flex-grow-0">
+                        <button class="pagination-btn"><i class="fa-solid fa-angles-left"></i></button>
+                        <button class="pagination-btn"><i class="fa-solid fa-angle-left"></i></button>
+                        <button class="pagination-btn active-dark">1</button>
+                        <button class="pagination-btn">2</button>
+                        <button class="pagination-btn"><i class="fa-solid fa-angle-right"></i></button>
+                        <button class="pagination-btn"><i class="fa-solid fa-angles-right"></i></button>
+                    </div>
+                    <div class="pagination-items-per-page">
+                        <select id="itemsPerPage" class="select-sm">
+                            <option value="20" selected>20</option>
+                        </select>
+                        <label for="itemsPerPage" class="text-gray ml-2">items per page</label>
+                    </div>
+                    <div class="pagination-count text-gray ml-auto">1 - 20 of 37 items</div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

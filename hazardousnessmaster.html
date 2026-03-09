@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OIA - SDS System</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="dashboard-body">
+
+    <div class="dashboard-container">
+        <div id="sidebar-placeholder"></div>
+
+        <main class="main-content">
+            
+            <header class="content-header table-header">
+                <div>
+                    <h2>Hazardousness Master</h2>
+                </div>
+            </header>
+
+            <div class="action-bar new-layout">
+                <button class="btn-primary" id="btnNewHazardousness"><i class="fa-solid fa-plus"></i> New</button>
+            </div>
+
+            <div class="login-card search-card">
+                <form class="search-form">
+                    <div class="search-form-flex">
+                        <h3 class="search-title mb-0">Search Criteria</h3>
+                        
+                        <div class="input-group-stacked mb-0">
+                            <input type="text" class="w-200" placeholder="">
+                        </div>
+
+                        <div class="search-buttons-right ml-auto">
+                            <button type="submit" class="btn-primary"><i class="fa-solid fa-magnifying-glass"></i> Search</button>
+                            <button type="button" class="btn-success-export"><i class="fa-solid fa-file-export"></i> Export</button>
+                            <button type="reset" class="btn-secondary-light"><i class="fa-solid fa-rotate-left"></i> Clear</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <div class="login-card table-card borderless-table">
+                <table class="data-table data-table-sds data-table-history data-table-compact">
+                    <thead>
+                        <tr>
+                            <th>No.</th>
+                            <th>Action</th>
+                            <th>CAS No. <i class="fa-solid fa-filter filter-icon"></i></th>
+                            <th>Component Name (EN) <i class="fa-solid fa-filter filter-icon"></i></th>
+                            <th>Component Name (TH) <i class="fa-solid fa-filter filter-icon"></i></th>
+                            <th>Update Date <i class="fa-solid fa-filter filter-icon"></i></th>
+                            <th>UpdateBy <i class="fa-solid fa-filter filter-icon"></i></th>
+                        </tr>
+                    </thead>
+                    <tbody style="font-size: 13.5px;">
+                        <tr><td>1</td><td class="action-cell-history"><button class="btn-icon-square btn-edit-pencil"><i class="fa-solid fa-pencil"></i></button><button class="btn-icon-square btn-delete-trash"><i class="fa-solid fa-trash-can"></i></button></td><td>123-91-1</td><td>1,4-dioxane</td><td>1,4-ไดออกเซน</td><td>2026-03-08 14:14:07</td><td>999999</td></tr>
+                        <tr><td>2</td><td class="action-cell-history"><button class="btn-icon-square btn-edit-pencil"><i class="fa-solid fa-pencil"></i></button><button class="btn-icon-square btn-delete-trash"><i class="fa-solid fa-trash-can"></i></button></td><td>70528-84-6</td><td>Benzenesulfonic acid dodecyl-, branched compds. with triethanolamine</td><td>กรดเบนซีนซัลโฟนิก </td><td>2026-03-08 14:00:01</td><td>999999</td></tr>
+                        <tr><td>3</td><td class="action-cell-history"><button class="btn-icon-square btn-edit-pencil"><i class="fa-solid fa-pencil"></i></button><button class="btn-icon-square btn-delete-trash"><i class="fa-solid fa-trash-can"></i></button></td><td>110-49-6</td><td>2-methoxyethyl acetate</td><td>2-เมทอกซีเอทิลอะซิเตต</td><td>2026-03-08 12:48:17</td><td>999999</td></tr>
+                        <tr><td>4</td><td class="action-cell-history"><button class="btn-icon-square btn-edit-pencil"><i class="fa-solid fa-pencil"></i></button><button class="btn-icon-square btn-delete-trash"><i class="fa-solid fa-trash-can"></i></button></td><td>4986-89-4</td><td>Pentaerythritol tetraacrylate</td><td>เพนตะเอริทริทอล เทตระอะคริเลต</td><td>2014-07-10 10:54:10</td><td>DT14-004</td></tr>
+                        <tr><td>5</td><td class="action-cell-history"><button class="btn-icon-square btn-edit-pencil"><i class="fa-solid fa-pencil"></i></button><button class="btn-icon-square btn-delete-trash"><i class="fa-solid fa-trash-can"></i></button></td><td>3524-68-3</td><td>Pentaerythritol triacrylate</td><td>เพนตะเอริทริทอล ไตรอะคริเลต</td><td>2014-07-10 10:51:42</td><td>DT14-004</td></tr>
+                        <tr><td>6</td><td class="action-cell-history"><button class="btn-icon-square btn-edit-pencil"><i class="fa-solid fa-pencil"></i></button><button class="btn-icon-square btn-delete-trash"><i class="fa-solid fa-trash-can"></i></button></td><td>AMPRTR407</td><td></td><td></td><td>2013-12-21 10:05:14</td><td>DT01-TASK</td></tr>
+                        <tr><td>7</td><td class="action-cell-history"><button class="btn-icon-square btn-edit-pencil"><i class="fa-solid fa-pencil"></i></button><button class="btn-icon-square btn-delete-trash"><i class="fa-solid fa-trash-can"></i></button></td><td>1313-13-9 ?</td><td>manganese dioxide</td><td>แมงกานีสไดออกไซด์</td><td>2013-12-02 14:31:33</td><td>DT01-TASK</td></tr>
+                        <tr><td>8</td><td class="action-cell-history"><button class="btn-icon-square btn-edit-pencil"><i class="fa-solid fa-pencil"></i></button><button class="btn-icon-square btn-delete-trash"><i class="fa-solid fa-trash-can"></i></button></td><td>68186-91-4 ?</td><td></td><td></td><td>2013-12-02 13:35:26</td><td>DT01-TASK</td></tr>
+                        <tr><td>9</td><td class="action-cell-history"><button class="btn-icon-square btn-edit-pencil"><i class="fa-solid fa-pencil"></i></button><button class="btn-icon-square btn-delete-trash"><i class="fa-solid fa-trash-can"></i></button></td><td>1336-93-2 ?</td><td>naphthenic acids, manganese salts</td><td>กรดแนฟทีนิค, เกลือแมงกานีส</td><td>2013-11-28 17:25:06</td><td>DT01-TASK</td></tr>
+                        <tr><td>10</td><td class="action-cell-history"><button class="btn-icon-square btn-edit-pencil"><i class="fa-solid fa-pencil"></i></button><button class="btn-icon-square btn-delete-trash"><i class="fa-solid fa-trash-can"></i></button></td><td>124-17-4</td><td>Ethanol, 2-(2-butoxyethoxy)-, acetate</td><td>2-(2-บิวทอกซีอีทอกซี)เอทิล อะซิเตต</td><td>2013-11-14 15:40:54</td><td>DT01-TASK</td></tr>
+                        <tr><td>11</td><td class="action-cell-history"><button class="btn-icon-square btn-edit-pencil"><i class="fa-solid fa-pencil"></i></button><button class="btn-icon-square btn-delete-trash"><i class="fa-solid fa-trash-can"></i></button></td><td>61791-10-4</td><td>Quaternary ammonium compounds, coco alkylbis(hydroxyethyl)methyl, ethoxylated, chlorides</td><td>สารประกอบควอเทอร์นารีแอมโมเนียม,</td><td>2013-09-25 11:46:58</td><td>DT01-TASK</td></tr>
+                        <tr><td>12</td><td class="action-cell-history"><button class="btn-icon-square btn-edit-pencil"><i class="fa-solid fa-pencil"></i></button><button class="btn-icon-square btn-delete-trash"><i class="fa-solid fa-trash-can"></i></button></td><td>107-83-5</td><td>Pentane, 2-methyl-</td><td>เพนเทน, 2-เมทิล-</td><td>2013-08-28 14:00:47</td><td>DT01-TASK</td></tr>
+                        <tr><td>13</td><td class="action-cell-history"><button class="btn-icon-square btn-edit-pencil"><i class="fa-solid fa-pencil"></i></button><button class="btn-icon-square btn-delete-trash"><i class="fa-solid fa-trash-can"></i></button></td><td>353-50-4</td><td>carbonyl difluoride</td><td>คาร์บอนิล ไดฟลูออไรด์</td><td>2013-06-21 11:11:02</td><td>DT01-TASK</td></tr>
+                        <tr><td>14</td><td class="action-cell-history"><button class="btn-icon-square btn-edit-pencil"><i class="fa-solid fa-pencil"></i></button><button class="btn-icon-square btn-delete-trash"><i class="fa-solid fa-trash-can"></i></button></td><td>7664-39-3</td><td>hydrofluoric acid</td><td>กรดไฮโดรฟลูออริก</td><td>2013-06-21 11:09:13</td><td>DT01-TASK</td></tr>
+                        <tr><td>15</td><td class="action-cell-history"><button class="btn-icon-square btn-edit-pencil"><i class="fa-solid fa-pencil"></i></button><button class="btn-icon-square btn-delete-trash"><i class="fa-solid fa-trash-can"></i></button></td><td>118-74-1</td><td>hexachlorobenzene</td><td>เฮกซะคลอโรเบนซีน</td><td>2013-06-10 10:46:44</td><td>DT01-TASK</td></tr>
+                        <tr><td>16</td><td class="action-cell-history"><button class="btn-icon-square btn-edit-pencil"><i class="fa-solid fa-pencil"></i></button><button class="btn-icon-square btn-delete-trash"><i class="fa-solid fa-trash-can"></i></button></td><td>032</td><td></td><td></td><td>2013-05-08 11:44:38</td><td>DT01-TASK</td></tr>
+                        <tr><td>17</td><td class="action-cell-history"><button class="btn-icon-square btn-edit-pencil"><i class="fa-solid fa-pencil"></i></button><button class="btn-icon-square btn-delete-trash"><i class="fa-solid fa-trash-can"></i></button></td><td>100-41-4</td><td>ethylbenzene *</td><td>เอทิลเบนซีน *</td><td>2013-02-08 16:04:41</td><td>DT01-TASK</td></tr>
+                        <tr><td>18</td><td class="action-cell-history"><button class="btn-icon-square btn-edit-pencil"><i class="fa-solid fa-pencil"></i></button><button class="btn-icon-square btn-delete-trash"><i class="fa-solid fa-trash-can"></i></button></td><td>142844-00-6</td><td>Alumina-Silica Ceramic Fibers</td><td>เส้นใยเซรามิก อะลูมินา-ซิลิกา</td><td>2013-01-24 09:34:09</td><td>DT01-TASK</td></tr>
+                        <tr><td>19</td><td class="action-cell-history"><button class="btn-icon-square btn-edit-pencil"><i class="fa-solid fa-pencil"></i></button><button class="btn-icon-square btn-delete-trash"><i class="fa-solid fa-trash-can"></i></button></td><td>79-06-1</td><td>acrylamide</td><td>อะคริลาไมด์</td><td>2012-07-02 15:38:56</td><td>DT01-TASK</td></tr>
+                        <tr><td>20</td><td class="action-cell-history"><button class="btn-icon-square btn-edit-pencil"><i class="fa-solid fa-pencil"></i></button><button class="btn-icon-square btn-delete-trash"><i class="fa-solid fa-trash-can"></i></button></td><td>115-96-8</td><td>Tris(2-chloroethyl) phosphate (TCEP)</td><td>ทริส(2-คลอโรเอทิล) ฟอสเฟต (TCEP)</td><td>2012-07-02 15:34:40</td><td>DT01-TASK</td></tr>
+                    </tbody>
+                </table>
+                
+                <div class="pagination-container new-pagination-layout pagination-left">
+                    <div class="pagination-nav flex-grow-0">
+                        <button class="pagination-btn"><i class="fa-solid fa-angles-left"></i></button>
+                        <button class="pagination-btn"><i class="fa-solid fa-angle-left"></i></button>
+                        <button class="pagination-btn active-dark">1</button>
+                        <button class="pagination-btn">2</button>
+                        <button class="pagination-btn">3</button>
+                        <button class="pagination-btn">4</button>
+                        <button class="pagination-btn">5</button>
+                        <button class="pagination-btn">6</button>
+                        <button class="pagination-btn">7</button>
+                        <button class="pagination-btn">8</button>
+                        <button class="pagination-btn">9</button>
+                        <button class="pagination-btn">10</button>
+                        <button class="pagination-btn"><i class="fa-solid fa-angle-right"></i></button>
+                        <button class="pagination-btn"><i class="fa-solid fa-angles-right"></i></button>
+                    </div>
+                    <div class="pagination-items-per-page">
+                        <select id="itemsPerPage" class="select-sm">
+                            <option value="20" selected>20</option>
+                        </select>
+                        <label for="itemsPerPage" class="text-gray ml-2">items per page</label>
+                    </div>
+                    <div class="pagination-count text-gray ml-auto">1 - 20 of 334 items</div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

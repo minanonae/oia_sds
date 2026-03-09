@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OIA - SDS System</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="dashboard-body">
+
+    <div class="dashboard-container">
+        <div id="sidebar-placeholder"></div>
+
+        <main class="main-content">
+            
+            <header class="content-header table-header">
+                <div>
+                    <h2>Audit Log</h2>
+                </div>
+            </header>
+
+            <div class="login-card search-card">
+                <form class="search-form">
+                    <div class="search-form-flex" style="justify-content: flex-start; gap: 20px; align-items: center;">
+                        
+                        <h3 class="search-title mb-0">Search</h3>
+                        
+                        <div class="input-group-horizontal">
+                            <label>Module :</label>
+                            <input type="text" class="w-200" placeholder="">
+                        </div>
+
+                        <div class="input-group-horizontal">
+                            <label>Action :</label>
+                            <select class="select-sm" style="min-width: 120px;">
+                                <option value="">Select All</option>
+                                <option value="Insert">Insert</option>
+                                <option value="Update">Update</option>
+                                <option value="Delete">Delete</option>
+                            </select>
+                        </div>
+
+                        <div class="input-group-horizontal">
+                            <label>Date (From) :</label>
+                            <input type="date">
+                        </div>
+
+                        <div class="input-group-horizontal">
+                            <label>To :</label>
+                            <input type="date">
+                        </div>
+
+                        <div class="search-buttons-right ml-auto">
+                            <button type="submit" class="btn-primary"><i class="fa-solid fa-magnifying-glass"></i> Search</button>
+                            <button type="reset" class="btn-secondary-light"><i class="fa-solid fa-rotate-left"></i> Clear</button>
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+
+            <div class="login-card table-card borderless-table">
+                <table class="data-table data-table-sds">
+                    <thead>
+                        <tr>
+                            <th>Time Stamp <i class="fa-solid fa-filter filter-icon"></i></th>
+                            <th>User <i class="fa-solid fa-filter filter-icon"></i></th>
+                            <th>Action Activity <i class="fa-solid fa-filter filter-icon"></i></th>
+                            <th>Module <i class="fa-solid fa-filter filter-icon"></i></th>
+                            <th>Summary <i class="fa-solid fa-filter filter-icon"></i></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>2026-03-09 03:04:47</td>
+                            <td>999999</td>
+                            <td class="text-danger"><i class="fa-solid fa-trash-can"></i> Delete</td>
+                            <td>Metal Composition</td>
+                            <td>Delete material code : 12-B240</td>
+                        </tr>
+                        <tr>
+                            <td>2026-03-09 02:58:51</td>
+                            <td>999999</td>
+                            <td class="text-danger"><i class="fa-solid fa-trash-can"></i> Delete</td>
+                            <td>Hazardousness Master</td>
+                            <td>Delete CAS No. : 12139-92-3?</td>
+                        </tr>
+                        <tr>
+                            <td>2026-03-09 02:49:47</td>
+                            <td></td>
+                            <td class="text-danger"><i class="fa-solid fa-trash-can"></i> Delete</td>
+                            <td>Metal Composition</td>
+                            <td>Delete material code : 12-B250</td>
+                        </tr>
+                        <tr>
+                            <td>2026-03-09 02:48:48</td>
+                            <td></td>
+                            <td class="text-danger"><i class="fa-solid fa-trash-can"></i> Delete</td>
+                            <td>Hazardousness Master</td>
+                            <td>Delete CAS No. : 68186-94-7?</td>
+                        </tr>
+                        <tr>
+                            <td>2026-03-06 13:35:25</td>
+                            <td>999999</td>
+                            <td class="text-danger"><i class="fa-solid fa-trash-can"></i> Delete</td>
+                            <td>Factory Master</td>
+                            <td>Delete factory code : 2</td>
+                        </tr>
+                        <tr>
+                            <td>2026-03-05 15:47:23</td>
+                            <td>999999</td>
+                            <td class="text-danger"><i class="fa-solid fa-trash-can"></i> Delete</td>
+                            <td>Paint Type Master</td>
+                            <td>Delete paint type code : 0066</td>
+                        </tr>
+                        <tr>
+                            <td>2026-03-05 13:53:30</td>
+                            <td>999999</td>
+                            <td class="text-danger"><i class="fa-solid fa-trash-can"></i> Delete</td>
+                            <td>Paint Type Master</td>
+                            <td>Delete paint type code : 0061</td>
+                        </tr>
+                        <tr>
+                            <td>2026-03-05 13:52:48</td>
+                            <td>999999</td>
+                            <td class="text-blue"><i class="fa-solid fa-pencil"></i> Update</td>
+                            <td>Paint Type Master</td>
+                            <td>Update paint type code : 0061</td>
+                        </tr>
+                        <tr>
+                            <td>2026-03-05 13:51:34</td>
+                            <td>999999</td>
+                            <td class="text-success"><i class="fa-solid fa-plus"></i> Insert</td>
+                            <td>Paint Type Master</td>
+                            <td>Add new paint type code : 0061 (Fluoroplastics powder 111)</td>
+                        </tr>
+                        <tr>
+                            <td>2026-03-05 12:24:52</td>
+                            <td>999999</td>
+                            <td class="text-danger"><i class="fa-solid fa-trash-can"></i> Delete</td>
+                            <td>Paint Type Master</td>
+                            <td>Delete paint type code : 045</td>
+                        </tr>
+                        <tr>
+                            <td>2026-03-05 10:30:21</td>
+                            <td>999999</td>
+                            <td class="text-success"><i class="fa-solid fa-plus"></i> Insert</td>
+                            <td>Paint Type Master</td>
+                            <td>Add new paint type code : 0050 (Pigment solution (solvent type))</td>
+                        </tr>
+                        <tr>
+                            <td>2026-03-05 10:30:21</td>
+                            <td>999999</td>
+                            <td class="text-blue"><i class="fa-solid fa-pencil"></i> Update</td>
+                            <td>Paint Type Master</td>
+                            <td>Update paint type code 0050</td>
+                        </tr>
+                        <tr>
+                            <td>2026-03-05 10:30:21</td>
+                            <td>999999</td>
+                            <td class="text-danger"><i class="fa-solid fa-trash-can"></i> Delete</td>
+                            <td>Paint Type Master</td>
+                            <td>Delete paint type code 0050</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <div class="pagination-container new-pagination-layout pagination-left">
+                    <div class="pagination-nav flex-grow-0">
+                        <button class="pagination-btn"><i class="fa-solid fa-angles-left"></i></button>
+                        <button class="pagination-btn"><i class="fa-solid fa-angle-left"></i></button>
+                        <button class="pagination-btn active-dark">1</button>
+                        <button class="pagination-btn"><i class="fa-solid fa-angle-right"></i></button>
+                        <button class="pagination-btn"><i class="fa-solid fa-angles-right"></i></button>
+                    </div>
+                    <div class="pagination-items-per-page">
+                        <select id="itemsPerPage" class="select-sm">
+                            <option value="20" selected>20</option>
+                        </select>
+                        <label for="itemsPerPage" class="text-gray ml-2">items per page</label>
+                    </div>
+                    <div class="pagination-count text-gray ml-auto">1 - 13 of 13 items</div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

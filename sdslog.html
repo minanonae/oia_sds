@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OIA - SDS System</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="dashboard-body">
+
+    <div class="dashboard-container">
+        <div id="sidebar-placeholder"></div>
+
+        <main class="main-content">
+            
+            <header class="content-header table-header">
+                <div>
+                    <h2>SDS Output History Log</h2>
+                </div>
+            </header>
+
+            <div class="login-card search-card">
+                <form class="search-form">
+                    <div class="search-form-flex" style="justify-content: flex-start; gap: 25px;">
+                        
+                        <h3 class="search-title mb-0">Search Criteria</h3>
+                        
+                        <div class="input-group-horizontal">
+                            <label>SDSLog / DocID :</label>
+                            <input type="text" class="w-200">
+                        </div>
+
+                        <div class="input-group-horizontal">
+                            <label>Date (From) :</label>
+                            <input type="date">
+                        </div>
+
+                        <div class="input-group-horizontal">
+                            <label>Date (To) :</label>
+                            <input type="date">
+                        </div>
+
+                        <div class="search-buttons-right ml-auto">
+                            <button type="submit" class="btn-primary"><i class="fa-solid fa-magnifying-glass"></i> Search</button>
+                            <button type="reset" class="btn-secondary-light"><i class="fa-solid fa-rotate-left"></i> Clear</button>
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+
+            <div class="login-card table-card borderless-table">
+                <table class="data-table data-table-sds">
+                    <thead>
+                        <tr>
+                            <th>SDSLog <i class="fa-solid fa-filter filter-icon"></i></th>
+                            <th>DocID <i class="fa-solid fa-filter filter-icon"></i></th>
+                            <th>User <i class="fa-solid fa-filter filter-icon"></i></th>
+                            <th>Doc Rev <i class="fa-solid fa-filter filter-icon"></i></th>
+                            <th>Customer <i class="fa-solid fa-filter filter-icon"></i></th>
+                            <th>Country <i class="fa-solid fa-filter filter-icon"></i></th>
+                            <th>Date Submit <i class="fa-solid fa-filter filter-icon"></i></th>
+                            <th>Remark <i class="fa-solid fa-filter filter-icon"></i></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>LOG-00001</td><td>26</td><td>Kittisak</td><td>1</td><td>AAA Company</td><td>Japan</td><td>2026-02-26 00:00:00</td><td>ฝ่ายขายต้องการให้ลูกค้า</td></tr>
+                        <tr><td>LOG-00002</td><td>37</td><td>Kittisak</td><td>2</td><td>BBB Company</td><td>Thai</td><td>2026-02-26 00:00:00</td><td>เทส 1111</td></tr>
+                        <tr><td>LOG-00003</td><td>SDS-0003</td><td>Kittisak</td><td>3</td><td>CCC Company</td><td>Japan</td><td>2026-02-26 00:00:00</td><td>เทส 2222</td></tr>
+                        <tr><td>LOG-00004</td><td>SDS-0004</td><td>Kittisak</td><td>4</td><td>DDD Company</td><td>Thai</td><td>2026-02-27 00:00:00</td><td>ดู SDS Log</td></tr>
+                        <tr><td>LOG-00005</td><td>SDS-0005</td><td>Kittisak</td><td>5</td><td>EEE Company</td><td>Japan</td><td>2026-02-27 00:00:00</td><td>เทส 3333</td></tr>
+                        <tr><td>LOG-00006</td><td>SDS-0009</td><td>999999</td><td>1</td><td>oia</td><td>thai</td><td>2026-02-28 20:15:37</td><td>test</td></tr>
+                        <tr><td>LOG-00007</td><td>SDS-0009</td><td>999999</td><td>2</td><td>oia</td><td>th</td><td>2026-03-01 02:46:20</td><td>test</td></tr>
+                        <tr><td>LOG-00008</td><td>SDS-0009</td><td>999999</td><td>3</td><td>oia</td><td>th</td><td>2026-03-01 03:21:14</td><td>test</td></tr>
+                        <tr><td>LOG-00009</td><td>SDS-0009</td><td>999999</td><td>4</td><td>นรฟ</td><td>ย่าหะ</td><td>2026-03-01 04:02:46</td><td>test</td></tr>
+                        <tr><td>LOG-00010</td><td>SDS-0009</td><td>999999</td><td>5</td><td>oia</td><td>th</td><td>2026-03-01 18:38:21</td><td>test</td></tr>
+                        <tr><td>LOG-00011</td><td>SDS-0009</td><td>999999</td><td>6</td><td>oia</td><td>jp</td><td>2026-03-01 18:45:06</td><td>test</td></tr>
+                        <tr><td>LOG-00012</td><td>SDS-0009</td><td>999999</td><td>7</td><td>oia</td><td>th</td><td>2026-03-01 19:03:39</td><td>test</td></tr>
+                        <tr><td>LOG-00013</td><td>SDS-0010</td><td>999999</td><td>1</td><td>oia</td><td>jpn</td><td>2026-03-01 19:07:04</td><td>test</td></tr>
+                        <tr><td>LOG-00014</td><td>SDS-0010</td><td>999999</td><td>2</td><td>oia</td><td>th</td><td>2026-03-01 19:24:50</td><td>test</td></tr>
+                        <tr><td>LOG-00015</td><td>SDS-0010</td><td>999999</td><td>3</td><td>oia</td><td>th</td><td>2026-03-01 19:32:59</td><td>test</td></tr>
+                        <tr><td>LOG-00016</td><td>SDS-0010</td><td>999999</td><td>4</td><td>oia</td><td>th</td><td>2026-03-01 20:04:27</td><td>test</td></tr>
+                    </tbody>
+                </table>
+                
+                <div class="pagination-container new-pagination-layout">
+                    <div class="pagination-nav">
+                        <button class="pagination-btn"><i class="fa-solid fa-angles-left"></i></button>
+                        <button class="pagination-btn"><i class="fa-solid fa-angle-left"></i></button>
+                        <button class="pagination-btn active-dark">1</button>
+                        <button class="pagination-btn">2</button>
+                        <button class="pagination-btn">3</button>
+                        <button class="pagination-btn">4</button>
+                        <button class="pagination-btn">5</button>
+                        <button class="pagination-btn"><i class="fa-solid fa-angle-right"></i></button>
+                        <button class="pagination-btn"><i class="fa-solid fa-angles-right"></i></button>
+                    </div>
+                    <div class="pagination-items-per-page">
+                        <select id="itemsPerPage" class="select-sm">
+                            <option value="20" selected>20</option>
+                        </select>
+                        <label for="itemsPerPage" class="text-gray ml-2">items per page</label>
+                    </div>
+                    <div class="pagination-count text-gray ml-auto">1 - 20 of 87 items</div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

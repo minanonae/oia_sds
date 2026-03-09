@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OIA - SDS System</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="dashboard-body">
+
+    <div class="dashboard-container">
+        <div id="sidebar-placeholder"></div>
+
+        <main class="main-content">
+            
+            <header class="content-header table-header">
+                <div>
+                    <h2>ERP Import</h2>
+                </div>
+            </header>
+
+            <div class="import-center-wrapper">
+                <div class="login-card friendly-import-card">
+                    
+                    <div class="import-header-section">
+                        <div class="sync-main-icon">
+                            <i class="fa-solid fa-arrows-rotate"></i>
+                        </div>
+                        <h1 class="text-navy">ERP Data Import</h1>
+                        <p class="text-gray">Synchronize the latest master data from ERP to update your database.</p>
+                    </div>
+
+                    <div class="import-action-section centered-btn-wrapper">
+                        <button class="btn-primary btn-sync-now">
+                            <i class="fa-solid fa-cloud-arrow-down"></i> Start Import
+                        </button>
+                    </div>
+
+                    <div class="modern-progress-wrapper">
+                        <div class="progress-labels">
+                            <span class="status-msg"><i class="fa-solid fa-circle-notch fa-spin"></i> Updating data...</span>
+                            <span class="count-msg">6 / 6 Categories</span>
+                        </div>
+                        <div class="modern-progress-bar">
+                            <div class="progress-fill-gradient" style="width: 100%;"></div>
+                        </div>
+                        <div class="progress-percentage-text">100% Complete</div>
+                    </div>
+
+                    <div class="friendly-dataset-container">
+                        
+                        <div class="dataset-row-item">
+                            <div class="dataset-left-side">
+                                <div class="dataset-icon-box bg-light-blue"><i class="fa-solid fa-microchip text-blue"></i></div>
+                                <div class="dataset-info-main">
+                                    <h4>CP Data <span class="dataset-sub">(Components / Parts)</span></h4>
+                                </div>
+                            </div>
+                            <div class="dataset-right-side">
+                                <p class="text-success-status"><i class="fa-solid fa-circle-check"></i> Completed (2,815 Items)</p>
+                            </div>
+                        </div>
+
+                        <div class="dataset-row-item">
+                            <div class="dataset-left-side">
+                                <div class="dataset-icon-box bg-light-green"><i class="fa-solid fa-box text-green"></i></div>
+                                <div class="dataset-info-main">
+                                    <h4>FG Data <span class="dataset-sub">(Finished Goods)</span></h4>
+                                </div>
+                            </div>
+                            <div class="dataset-right-side">
+                                <p class="text-success-status"><i class="fa-solid fa-circle-check"></i> Completed (3,777 Items)</p>
+                            </div>
+                        </div>
+
+                        <div class="dataset-row-item">
+                            <div class="dataset-left-side">
+                                <div class="dataset-icon-box bg-light-orange"><i class="fa-solid fa-flask text-orange"></i></div>
+                                <div class="dataset-info-main">
+                                    <h4>FM Data <span class="dataset-sub">(Formula / BOM)</span></h4>
+                                </div>
+                            </div>
+                            <div class="dataset-right-side">
+                                <p class="text-success-status"><i class="fa-solid fa-circle-check"></i> Completed (24 Items)</p>
+                            </div>
+                        </div>
+
+                        <div class="dataset-row-item">
+                            <div class="dataset-left-side">
+                                <div class="dataset-icon-box bg-light-grey"><i class="fa-solid fa-layer-group text-grey"></i></div>
+                                <div class="dataset-info-main">
+                                    <h4>RM Data <span class="dataset-sub">(Raw Materials)</span></h4>
+                                </div>
+                            </div>
+                            <div class="dataset-right-side">
+                                <p class="text-success-status"><i class="fa-solid fa-circle-check"></i> Completed (2,260 Items)</p>
+                            </div>
+                        </div>
+
+                        <div class="dataset-row-item">
+                            <div class="dataset-left-side">
+                                <div class="dataset-icon-box" style="background-color: rgba(111, 66, 193, 0.1);"><i class="fa-solid fa-users" style="color: #6f42c1;"></i></div>
+                                <div class="dataset-info-main">
+                                    <h4>Customer Data <span class="dataset-sub">(Customer Item)</span></h4>
+                                </div>
+                            </div>
+                            <div class="dataset-right-side">
+                                <p class="text-success-status"><i class="fa-solid fa-circle-check"></i> Completed (2 Items)</p>
+                            </div>
+                        </div>
+
+                        <div class="dataset-row-item">
+                            <div class="dataset-left-side">
+                                <div class="dataset-icon-box" style="background-color: rgba(231, 76, 60, 0.1);"><i class="fa-solid fa-code-branch" style="color: #e74c3c;"></i></div>
+                                <div class="dataset-info-main">
+                                    <h4>Effective Reversion no. <span class="dataset-sub">(Version Logs)</span></h4>
+                                </div>
+                            </div>
+                            <div class="dataset-right-side">
+                                <p class="text-success-status"><i class="fa-solid fa-circle-check"></i> Completed (115 Items)</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="import-footer">
+                        <p><i class="fa-solid fa-circle-info"></i> Your data has been successfully synchronized and indexed.</p>
+                    </div>
+
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

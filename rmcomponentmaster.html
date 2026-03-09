@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OIA - SDS System</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="dashboard-body">
+
+    <div class="dashboard-container">
+        <div id="sidebar-placeholder"></div>
+
+        <main class="main-content">
+            
+            <header class="content-header table-header">
+                <div>
+                    <h2>RM Composition</h2>
+                </div>
+            </header>
+
+            <div class="action-bar new-layout">
+                <button class="btn-primary" id="btnNewRMComposition"><i class="fa-solid fa-plus"></i> New</button>
+            </div>
+
+            <div class="login-card search-card">
+                <form class="search-form">
+                    <div class="search-form-flex">
+                        
+                        <h3 class="search-title mb-0">Search Criteria</h3>
+                        
+                        <div class="input-group-stacked mb-0">
+                            <input type="text" class="w-200" placeholder="">
+                        </div>
+
+                        <div class="search-buttons-right">
+                            <button type="submit" class="btn-primary"><i class="fa-solid fa-magnifying-glass"></i> Search</button>
+                            <button type="button" class="btn-success-export"><i class="fa-solid fa-file-export"></i> Export</button>
+                            <button type="reset" class="btn-secondary-light"><i class="fa-solid fa-rotate-left"></i> Clear</button>
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+
+            <div class="login-card table-card borderless-table">
+                <table class="data-table data-table-sds metal-master-table">
+                    <thead>
+                        <tr>
+                            <th>No.</th>
+                            <th>Action</th>
+                            <th>R/M Code</th>
+                            <th>R/M Name</th>
+                            <th>Special Symbol</th>
+                            <th>Update Date</th>
+                            <th>Update By</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td><button class="action-btn-square btn-edit-square"><i class="fa-solid fa-pencil"></i></button><button class="action-btn-square btn-delete-square"><i class="fa-solid fa-trash-can"></i></button></td>
+                            <td>30-H103</td>
+                            <td>30-H103</td>
+                            <td>0</td>
+                            <td>2026-03-05 15:45</td>
+                            <td>999999</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td><button class="action-btn-square btn-edit-square"><i class="fa-solid fa-pencil"></i></button><button class="action-btn-square btn-delete-square"><i class="fa-solid fa-trash-can"></i></button></td>
+                            <td>30-H101</td>
+                            <td>HIP AERO COAT HP-220T GRAY</td>
+                            <td>0</td>
+                            <td>2025-08-09 16:42</td>
+                            <td>Patcharaporn</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td><button class="action-btn-square btn-edit-square"><i class="fa-solid fa-pencil"></i></button><button class="action-btn-square btn-delete-square"><i class="fa-solid fa-trash-can"></i></button></td>
+                            <td>14-N050</td>
+                            <td>NMP(N-METHYL-2-PYRROLIDONE)</td>
+                            <td>0</td>
+                            <td>2025-08-07 14:57</td>
+                            <td>Patcharaporn</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td><button class="action-btn-square btn-edit-square"><i class="fa-solid fa-pencil"></i></button><button class="action-btn-square btn-delete-square"><i class="fa-solid fa-trash-can"></i></button></td>
+                            <td>12-H020</td>
+                            <td>HALOX PIGMENT 2230</td>
+                            <td>0</td>
+                            <td>2025-08-06 15:57</td>
+                            <td>Patcharaporn</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td><button class="action-btn-square btn-edit-square"><i class="fa-solid fa-pencil"></i></button><button class="action-btn-square btn-delete-square"><i class="fa-solid fa-trash-can"></i></button></td>
+                            <td>30-H102</td>
+                            <td>HIP AERO COLOR HP-IS SILVER</td>
+                            <td>0</td>
+                            <td>2025-07-29 13:45</td>
+                            <td>Patcharaporn</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td><button class="action-btn-square btn-edit-square"><i class="fa-solid fa-pencil"></i></button><button class="action-btn-square btn-delete-square"><i class="fa-solid fa-trash-can"></i></button></td>
+                            <td>30-H100</td>
+                            <td>HIP AERO PRIMER HP-220U BROWN</td>
+                            <td>0</td>
+                            <td>2025-07-29 13:43</td>
+                            <td>Patcharaporn</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td><button class="action-btn-square btn-edit-square"><i class="fa-solid fa-pencil"></i></button><button class="action-btn-square btn-delete-square"><i class="fa-solid fa-trash-can"></i></button></td>
+                            <td>21-B150</td>
+                            <td>BOTTLE 5 LTS. (JAPAN)</td>
+                            <td>0</td>
+                            <td>2025-07-02 16:32</td>
+                            <td>Patcharaporn</td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td><button class="action-btn-square btn-edit-square"><i class="fa-solid fa-pencil"></i></button><button class="action-btn-square btn-delete-square"><i class="fa-solid fa-trash-can"></i></button></td>
+                            <td>12-M035</td>
+                            <td>MANGANESE DIOXIDE</td>
+                            <td>0</td>
+                            <td>2025-07-02 16:30</td>
+                            <td>Patcharaporn</td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td><button class="action-btn-square btn-edit-square"><i class="fa-solid fa-pencil"></i></button><button class="action-btn-square btn-delete-square"><i class="fa-solid fa-trash-can"></i></button></td>
+                            <td>11-A200</td>
+                            <td>AQUALON EC-N200</td>
+                            <td>0</td>
+                            <td>2025-07-02 16:07</td>
+                            <td>Patcharaporn</td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td><button class="action-btn-square btn-edit-square"><i class="fa-solid fa-pencil"></i></button><button class="action-btn-square btn-delete-square"><i class="fa-solid fa-trash-can"></i></button></td>
+                            <td>12-D200</td>
+                            <td>DRP-E200BL</td>
+                            <td>0</td>
+                            <td>2025-07-02 16:06</td>
+                            <td>Patcharaporn</td>
+                        </tr>
+                        <tr>
+                            <td>11</td>
+                            <td><button class="action-btn-square btn-edit-square"><i class="fa-solid fa-pencil"></i></button><button class="action-btn-square btn-delete-square"><i class="fa-solid fa-trash-can"></i></button></td>
+                            <td>16-PC220</td>
+                            <td>CINILEX RED SR3C</td>
+                            <td>0</td>
+                            <td>2025-07-01 15:46</td>
+                            <td>Punnaphat</td>
+                        </tr>
+                        <tr>
+                            <td>12</td>
+                            <td><button class="action-btn-square btn-edit-square"><i class="fa-solid fa-pencil"></i></button><button class="action-btn-square btn-delete-square"><i class="fa-solid fa-trash-can"></i></button></td>
+                            <td>16-RD140</td>
+                            <td>DOWSIL RSN-0804 RESIN</td>
+                            <td>0</td>
+                            <td>2025-07-01 15:45</td>
+                            <td>Punnaphat</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <div class="pagination-container new-pagination-layout pagination-left">
+                    <div class="pagination-nav flex-grow-0">
+                        <button class="pagination-btn"><i class="fa-solid fa-angles-left"></i></button>
+                        <button class="pagination-btn"><i class="fa-solid fa-angle-left"></i></button>
+                        <button class="pagination-btn active-dark" style="background-color: #333; color: #fff; border-color: #333;">1</button>
+                        <button class="pagination-btn">2</button>
+                        <button class="pagination-btn">3</button>
+                        <button class="pagination-btn">4</button>
+                        <button class="pagination-btn">5</button>
+                        <button class="pagination-btn">6</button>
+                        <button class="pagination-btn">7</button>
+                        <button class="pagination-btn">8</button>
+                        <button class="pagination-btn">9</button>
+                        <button class="pagination-btn">10</button>
+                        <button class="pagination-btn">...</button>
+                        <button class="pagination-btn"><i class="fa-solid fa-angle-right"></i></button>
+                        <button class="pagination-btn"><i class="fa-solid fa-angles-right"></i></button>
+                    </div>
+                    <div class="pagination-items-per-page">
+                        <select id="itemsPerPage" class="select-sm">
+                            <option value="20" selected>20</option>
+                        </select>
+                        <label for="itemsPerPage" class="text-gray ml-2">items per page</label>
+                    </div>
+                    <div class="pagination-count text-gray ml-auto">1 - 20 of 2259 items</div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

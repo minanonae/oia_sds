@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OIA - SDS System</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="dashboard-body">
+
+    <div class="dashboard-container">
+        <div id="sidebar-placeholder"></div>
+
+        <main class="main-content">
+            
+            <header class="content-header table-header">
+                <div>
+                    <h2>GHS Label Print</h2>
+                </div>
+            </header>
+
+            <div class="login-card search-card">
+                <form class="search-form">
+                    <div style="display: flex; align-items: center; gap: 20px; flex-wrap: wrap;">
+                        <h3 class="search-title" style="margin-bottom: 0;">Search Criteria</h3>
+                        
+                        <div class="input-group-stacked" style="margin-bottom: 0;">
+                            <input type="text" style="width: 250px;" placeholder="">
+                        </div>
+
+                        <div class="search-buttons-bottom" style="margin-left: auto; margin-top: 0;">
+                            <button type="submit" class="btn-primary"><i class="fa-solid fa-magnifying-glass"></i> Search</button>
+                            <button type="button" class="btn-success-export"><i class="fa-solid fa-file-export"></i> Export</button>
+                            <button type="reset" class="btn-secondary-light"><i class="fa-solid fa-rotate-left"></i> Clear</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <div class="login-card table-card borderless-table">
+                <table class="data-table data-table-sds">
+                    <thead>
+                        <tr>
+                            <th>No.</th>
+                            <th>Actions</th>
+                            <th>F/G Code <i class="fa-solid fa-filter" style="font-size: 10px; margin-left: 5px; color: #888;"></i></th>
+                            <th>F/G Name <i class="fa-solid fa-filter" style="font-size: 10px; margin-left: 5px; color: #888;"></i></th>
+                            <th>Use <i class="fa-solid fa-filter" style="font-size: 10px; margin-left: 5px; color: #888;"></i></th>
+                            <th>Type1 <i class="fa-solid fa-filter" style="font-size: 10px; margin-left: 5px; color: #888;"></i></th>
+                            <th>Type2 <i class="fa-solid fa-filter" style="font-size: 10px; margin-left: 5px; color: #888;"></i></th>
+                            <th>UN <i class="fa-solid fa-filter" style="font-size: 10px; margin-left: 5px; color: #888;"></i></th>
+                            <th>Guideline No <i class="fa-solid fa-filter" style="font-size: 10px; margin-left: 5px; color: #888;"></i></th>
+                            <th>Special Print <i class="fa-solid fa-filter" style="font-size: 10px; margin-left: 5px; color: #888;"></i></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td class="action-cell">
+                                <button class="btn-icon-transparent text-blue"><i class="fa-solid fa-eye"></i></button>
+                            </td>
+                            <td>00041</td>
+                            <td>10F-5 : 16KG</td>
+                            <td>Silicone resin type paints (solvent type)</td>
+                            <td></td>
+                            <td>2nd class organic solvent</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>No</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td class="action-cell">
+                                <button class="btn-icon-transparent text-blue"><i class="fa-solid fa-eye"></i></button>
+                            </td>
+                            <td>TH01081</td>
+                            <td>TH87-GD : 16KG</td>
+                            <td>Synthetic resin paints (solvent type)</td>
+                            <td>Class 4 flammable liquid, Grade 2 petroleum, non-water solubility</td>
+                            <td>2nd class organic solvent</td>
+                            <td>1263</td>
+                            <td>128</td>
+                            <td>No</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <div class="pagination-container new-pagination-layout" style="justify-content: flex-start; gap: 20px;">
+                    <div class="pagination-nav" style="flex-grow: 0;">
+                        <button class="pagination-btn"><i class="fa-solid fa-angles-left"></i></button>
+                        <button class="pagination-btn"><i class="fa-solid fa-angle-left"></i></button>
+                        <button class="pagination-btn active-dark">1</button>
+                        <button class="pagination-btn"><i class="fa-solid fa-angle-right"></i></button>
+                        <button class="pagination-btn"><i class="fa-solid fa-angles-right"></i></button>
+                    </div>
+                    <div class="pagination-items-per-page">
+                        <select id="itemsPerPage">
+                            <option value="20" selected>20</option>
+                        </select>
+                        <label for="itemsPerPage">items per page</label>
+                    </div>
+                    <div class="pagination-count" style="margin-left: auto;">1 - 2 of 2 items</div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

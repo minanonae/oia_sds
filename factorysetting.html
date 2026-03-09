@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OIA - SDS System</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="dashboard-body">
+
+    <div class="dashboard-container">
+        <div id="sidebar-placeholder"></div>
+
+        <main class="main-content">
+            
+            <header class="content-header table-header">
+                <div>
+                    <h2>Factory Setting</h2>
+                </div>
+            </header>
+
+            <div class="action-bar new-layout">
+                <button class="btn-primary" id="btnNewFactory"><i class="fa-solid fa-plus"></i> New</button>
+            </div>
+
+            <div class="login-card search-card">
+                <form class="search-form">
+                    <div class="search-form-flex" style="justify-content: flex-start; gap: 20px; align-items: center;">
+                        <h3 class="search-title mb-0">Search Criteria</h3>
+                        <div class="input-group-horizontal">
+                            <input type="text" class="w-200" placeholder="">
+                        </div>
+                        <div class="search-buttons-right ml-auto">
+                            <button type="submit" class="btn-primary"><i class="fa-solid fa-magnifying-glass"></i> Search</button>
+                            <button type="button" class="btn-success-export"><i class="fa-solid fa-file-export"></i> Export</button>
+                            <button type="reset" class="btn-secondary-light"><i class="fa-solid fa-rotate-left"></i> Clear</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <div class="login-card table-card borderless-table">
+                <table class="data-table data-table-sds">
+                    <thead>
+                        <tr>
+                            <th style="width: 120px;">Action</th>
+                            <th>Company Name (EN)</th>
+                            <th>Company Name (TH)</th>
+                            <th>Telephone</th>
+                            <th>Email</th>
+                            <th>Update Date</th>
+                            <th>Update By</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+    <tr>
+        <td class="action-cell">
+            <button class="btn-icon-transparent text-blue"><i class="fa-solid fa-eye"></i></button>
+            <button class="btn-icon-transparent text-yellow"><i class="fa-solid fa-pencil"></i></button>
+            <button class="btn-icon-transparent text-red"><i class="fa-solid fa-trash-can"></i></button>
+        </td>
+        <td>OKITSUMO CO.,LTD. 555</td>
+        <td>บริษัท โอคิทสึโมะ จำกัด (ประเทศญี่ปุ่น) 666</td>
+        <td>+81-6-6351-9361 22</td>
+        <td>contact@oia.com 55</td>
+        <td>2026-03-06 16:27:04</td>
+        <td>999999</td>
+    </tr>
+    <tr>
+        <td class="action-cell">
+            <button class="btn-icon-transparent text-blue"><i class="fa-solid fa-eye"></i></button>
+            <button class="btn-icon-transparent text-yellow"><i class="fa-solid fa-pencil"></i></button>
+            <button class="btn-icon-transparent text-red"><i class="fa-solid fa-trash-can"></i></button>
+        </td>
+        <td>OKITSUMO CO.,LTD.</td>
+        <td>บริษัท โอคิทสึโมะ จำกัด (ประเทศญี่ปุ่น)</td>
+        <td>+81-6-6351-9361</td>
+        <td>contact@globaltech.com</td>
+        <td>2026-03-06 13:35:25</td>
+        <td>999999</td>
+    </tr>
+    <tr>
+        <td class="action-cell">
+            <button class="btn-icon-transparent text-blue"><i class="fa-solid fa-eye"></i></button>
+            <button class="btn-icon-transparent text-yellow"><i class="fa-solid fa-pencil"></i></button>
+            <button class="btn-icon-transparent text-red"><i class="fa-solid fa-trash-can"></i></button>
+        </td>
+        <td>OKITSUMO INTERNATIONAL (ASIA) CO.,LTD.</td>
+        <td>OKITSUMO INTERNATIONAL (ASIA) CO.,LTD.</td>
+        <td>0-3720-8594-6</td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+</tbody>
+                </table>
+                
+                <div class="pagination-container new-pagination-layout pagination-left">
+                    <div class="pagination-nav flex-grow-0">
+                        <button class="pagination-btn"><i class="fa-solid fa-angles-left"></i></button>
+                        <button class="pagination-btn"><i class="fa-solid fa-angle-left"></i></button>
+                        <button class="pagination-btn active-dark">1</button>
+                        <button class="pagination-btn"><i class="fa-solid fa-angle-right"></i></button>
+                        <button class="pagination-btn"><i class="fa-solid fa-angles-right"></i></button>
+                    </div>
+                    <div class="pagination-items-per-page">
+                        <select id="itemsPerPage">
+                            <option value="20" selected>20</option>
+                        </select>
+                        <label for="itemsPerPage" class="text-gray ml-2">items per page</label>
+                    </div>
+                    <div class="pagination-count text-gray ml-auto">1 - 3 of 3 items</div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

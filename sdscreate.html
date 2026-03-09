@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OIA - SDS System</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="dashboard-body">
+
+    <div class="dashboard-container">
+        <div id="sidebar-placeholder"></div>
+
+        <main class="main-content">
+            
+            <header class="content-header table-header">
+                <div>
+                    <h2 id="page-title">Output SDS</h2>
+                </div>
+            </header>
+
+            <div class="wizard-stepper-container">
+                <div class="step-progress-bar" id="stepper-bar"></div>
+                <div class="step active" data-step="1">
+                    <div class="step-circle"></div>
+                    <div class="step-label">Basic Information</div>
+                </div>
+                <div class="step" data-step="2">
+                    <div class="step-circle"></div>
+                    <div class="step-label">Formulation Information</div>
+                </div>
+                <div class="step" data-step="3">
+                    <div class="step-circle"></div>
+                    <div class="step-label">Component Information</div>
+                </div>
+                <div class="step" data-step="4">
+                    <div class="step-circle"></div>
+                    <div class="step-label">Input Material Info</div>
+                </div>
+                <div class="step" data-step="5">
+                    <div class="step-circle"></div>
+                    <div class="step-label">Select Data</div>
+                </div>
+            </div>
+
+            <div class="login-card wizard-card">
+                
+                <div class="wizard-step-content" id="step-1-content">
+                    <h3 class="wizard-section-title"><i class="fa-solid fa-file-lines text-orange"></i> SDS Information Registration</h3>
+                    
+                    <div class="form-section">
+                        <h4>BASIC INFORMATION</h4>
+                        <div class="wizard-grid-4">
+                            <div class="input-group-stacked">
+                                <label>Date Of Issue <span class="text-danger">*</span></label>
+                                <div class="input-icon-wrapper">
+                                    <input type="date" value="2026-03-09">
+                                </div>
+                            </div>
+                            <div class="input-group-stacked">
+                                <label>Date of Revision <span class="text-danger">*</span></label>
+                                <input type="date" disabled class="bg-light">
+                            </div>
+                            <div class="input-group-stacked">
+                                <label>Keep Year</label>
+                                <input type="text" placeholder="Enter keep year...">
+                            </div>
+                            <div class="input-group-stacked">
+                                <label>Corporate <span class="text-danger">*</span></label>
+                                <select><option>- Select -</option></select>
+                            </div>
+                        </div>
+                        
+                        <div class="wizard-grid-2-custom mt-3">
+                            <div class="radio-group-box">
+                                <label class="group-label">Fluorine Containing <span class="text-danger">*</span></label>
+                                <div class="radio-options">
+                                    <label><input type="radio" name="fluorine"> Have</label>
+                                    <label><input type="radio" name="fluorine" checked> No</label>
+                                </div>
+                            </div>
+                            <div class="radio-group-box">
+                                <label class="group-label">Filling Info <span class="text-danger">*</span></label>
+                                <div class="radio-options">
+                                    <label><input type="radio" name="filling"> DME</label>
+                                    <label><input type="radio" name="filling" checked> LPG</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-section">
+                        <h4>PRODUCT / COMPANY IDENTIFICATION</h4>
+                        <div class="wizard-grid-2 mt-3">
+                            <div class="input-group-stacked">
+                                <label>Product Code (C/P Code) <span class="text-danger">*</span></label>
+                                <div class="input-combo">
+                                    <input type="text" placeholder="C/P C..." class="combo-small">
+                                    <input type="text" placeholder="C/P Product Name..." class="combo-large bg-light" readonly>
+                                </div>
+                            </div>
+                            <div class="input-group-stacked">
+                                <label>Product Code (F/G Code) <span class="text-danger">*</span></label>
+                                <div class="input-combo">
+                                    <input type="text" placeholder="F/G C..." class="combo-small">
+                                    <input type="text" placeholder="F/G Product Name..." class="combo-large bg-light" readonly>
+                                    <button class="btn-search-orange"><i class="fa-solid fa-magnifying-glass"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="wizard-grid-2 mt-3">
+                            <div class="input-group-stacked">
+                                <label>Revision</label>
+                                <input type="text" class="bg-light" readonly>
+                            </div>
+                            <div class="input-group-stacked">
+                                <label>Product Type <span class="text-danger">*</span></label>
+                                <select><option>- Select -</option></select>
+                            </div>
+                        </div>
+
+                        <div class="wizard-grid-3 mt-3">
+                            <div class="input-group-stacked"><label>Company name <span class="text-danger">*</span></label><input type="text" placeholder="Enter company name..."></div>
+                            <div class="input-group-stacked"><label>Department <span class="text-danger">*</span></label><input type="text" placeholder="Enter department..."></div>
+                            <div class="input-group-stacked"><label>Recommended applications <span class="text-danger">*</span></label><select><option>- Select -</option></select></div>
+                        </div>
+                        
+                        <div class="wizard-grid-3 mt-3">
+                            <div class="input-group-stacked"><label>Address 1 <span class="text-danger">*</span></label><input type="text" placeholder="Enter address line 1..."></div>
+                            <div class="input-group-stacked"><label>Address 2 <span class="text-danger">*</span></label><input type="text" placeholder="Enter address line 2..."></div>
+                            <div class="input-group-stacked"><label>Address 3</label><input type="text" placeholder="Enter address line 3..."></div>
+                        </div>
+
+                        <div class="wizard-grid-3 mt-3">
+                            <div class="input-group-stacked"><label>Telephone <span class="text-danger">*</span></label><input type="text" placeholder="Enter telephone number..."></div>
+                            <div class="input-group-stacked"><label>FAX Number <span class="text-danger">*</span></label><input type="text" placeholder="Enter FAX number..."></div>
+                            <div class="input-group-stacked"><label>Emergency Number <span class="text-danger">*</span></label><input type="text" placeholder="Enter emergency number..."></div>
+                        </div>
+                    </div>
+
+                    <div class="form-section flex-split">
+                        <div class="left-split">
+                            <h4>PHYSICAL PROPERTIES</h4>
+                            <div class="wizard-grid-3">
+                                <div class="input-group-stacked"><label>State</label><input type="text" placeholder="Select State..." readonly class="bg-light"></div>
+                                <div class="input-group-stacked"><label>Odor</label><input type="text" placeholder="Select Odor..." readonly class="bg-light"></div>
+                                <div class="radio-group-box column-radio">
+                                    <label class="group-label text-center">Baking Temperature</label>
+                                    <div class="radio-options justify-center mt-1">
+                                        <label><input type="radio" name="baking"> 180 °C</label>
+                                        <label><input type="radio" name="baking"> 380 °C</label>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="wizard-grid-3 mt-3">
+                                <div class="input-group-stacked">
+                                    <label>Density</label>
+                                    <div class="input-with-unit">
+                                        <input type="text" placeholder="0.00"><span class="unit-box">g/ml</span>
+                                    </div>
+                                </div>
+                                <div class="input-group-stacked">
+                                    <label>Flash Point</label>
+                                    <div class="input-with-unit">
+                                        <input type="text" placeholder="Enter flash point..."><span class="unit-box">°C</span>
+                                    </div>
+                                </div>
+                                <div class="input-group-stacked">
+                                    <label>pH Value</label>
+                                    <input type="text" placeholder="Enter pH value...">
+                                </div>
+                            </div>
+
+                            <div class="input-group-stacked full-width mt-3">
+                                <label>Remark <span class="text-danger">*</span></label>
+                                <input type="text" placeholder="Enter remark or additional notes...">
+                            </div>
+                        </div>
+                        
+                        <div class="right-split mixing-ratio-box">
+                            <h4 style="margin-bottom: 20px;">Mixing Ratio</h4>
+                            <div class="input-group-stacked">
+                                <label>Undiluted Solution</label>
+                                <input type="text" placeholder="Enter undiluted solution..." class="bg-white">
+                            </div>
+                            <div class="input-group-stacked mt-3">
+                                <label>DME</label>
+                                <input type="text" placeholder="Enter DME..." class="bg-white">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="wizard-step-content" id="step-2-content" style="display: none;">
+                    <h3 class="wizard-section-title"><i class="fa-solid fa-flask text-orange"></i> Formulation Information</h3>
+                    <div class="orange-table-wrapper">
+                        <table class="data-table orange-header-table">
+                            <thead><tr><th>R/M CODE</th><th>R/M NAME</th><th>QTY.</th></tr></thead>
+                            <tbody><tr><td colspan="3" class="empty-state">No data added yet.</td></tr></tbody>
+                            <tfoot><tr><td colspan="2" class="text-right fw-bold">Total Qty.</td><td class="fw-bold">0.00</td></tr></tfoot>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="wizard-step-content" id="step-3-content" style="display: none;">
+                    <h3 class="wizard-section-title"><i class="fa-solid fa-layer-group text-orange"></i> Component Information</h3>
+                    <div class="orange-table-wrapper">
+                        <table class="data-table orange-header-table">
+                            <thead><tr><th>R/M CODE</th><th>R/M NAME</th><th>QTY.</th><th>COMPONENT NAME</th><th>CAS NO</th><th>CONTENT...</th></tr></thead>
+                            <tbody><tr><td colspan="6" class="empty-state">No data added yet.</td></tr></tbody>
+                            <tfoot>
+                                <tr>
+                                    <td colspan="2" class="text-right fw-bold">Total Qty</td><td class="fw-bold">0.00</td>
+                                    <td colspan="2" class="text-right fw-bold">Total Content</td><td class="fw-bold">0</td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="wizard-step-content" id="step-4-content" style="display: none;">
+                    <h3 class="wizard-section-title"><i class="fa-solid fa-cubes text-orange"></i> Input Material Information</h3>
+                    <div class="orange-table-wrapper">
+                        <table class="data-table orange-header-table">
+                            <thead><tr><th>COMPONENT NAME</th><th>SELECT</th><th>LOWER LIMIT</th><th>CONTENT (%)</th><th>BOILING (LOWER)</th><th>BOILING (UPPER)</th></tr></thead>
+                            <tbody><tr><td colspan="6" class="empty-state">No items to display</td></tr></tbody>
+                        </table>
+                        <div class="table-pagination-footer">
+                            <div class="pagination-nav mini">
+                                <button><i class="fa-solid fa-angles-left"></i></button><button><i class="fa-solid fa-angle-left"></i></button>
+                                <button><i class="fa-solid fa-angle-right"></i></button><button><i class="fa-solid fa-angles-right"></i></button>
+                            </div>
+                            <div class="pagination-select"><select><option>20</option></select> <span class="text-muted">items per page</span></div>
+                            <div class="pagination-count ml-auto text-muted">No items to display</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="wizard-step-content" id="step-5-content" style="display: none;">
+                    <h3 class="wizard-section-title"><i class="fa-solid fa-circle-check text-orange"></i> Select Data</h3>
+                    <div class="select-data-box">
+                        <div class="box-header">Available Data</div>
+                        <div class="box-content checkbox-list">
+                            <label><input type="checkbox" checked> 1. PRODUCT / COMPANY IDENTIFICATION</label>
+                            <label><input type="checkbox"> 2. HAZARDS IDENTIFICATION</label>
+                            <label><i class="fa-solid fa-caret-right text-muted"></i> <input type="checkbox"> 3. INFORMATION ON COMPOSITION / INGREDIENTS</label>
+                            <label><input type="checkbox"> 4. FIRST AID MEASURES</label>
+                            <label><input type="checkbox"> 5. FIRE FIGHTING MEASURES</label>
+                            <label><input type="checkbox"> 6. ACCIDENTAL RELEASE MEASURES</label>
+                            <label><input type="checkbox"> 7. HANDLING AND STORAGE</label>
+                            <label><input type="checkbox"> 8. EXPOSURE CONTROL / PERSONAL PROTECTION</label>
+                        </div>
+                    </div>
+                    <div class="bottom-controls mt-3 flex-gap-10">
+                        <button class="btn-disabled">Symbol</button>
+                        <button class="btn-disabled">Composition</button>
+                        <button class="btn-disabled">Hazard</button>
+                        <button class="btn-disabled">Property</button>
+                    </div>
+                </div>
+
+                <div class="wizard-footer">
+                    <button class="btn-wizard-back" id="btn-wizard-back" style="visibility: hidden;">Back</button>
+                    <div class="ml-auto">
+                        <button class="btn-wizard-next" id="btn-wizard-next">Next</button>
+                        <button class="btn-wizard-next" id="btn-wizard-save" style="display: none;">Save & Generate</button>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+    </div>
+
+    <div class="wizard-step-content" id="step-2-content" style="display: none;">
+    <div class="step-header-flex">
+        <h3 class="wizard-section-title"><i class="fa-solid fa-flask text-orange"></i> Formulation Information</h3>
+        <div class="step-actions">
+            <button class="btn-action-outline"><i class="fa-solid fa-plus"></i> Add Row</button>
+        </div>
+    </div>
+
+    <div class="orange-table-wrapper">
+        <div class="table-responsive">
+            <table class="data-table orange-header-table">
+                <thead>
+                    <tr>
+                        <th style="width: 250px;">R/M CODE</th>
+                        <th>R/M NAME</th>
+                        <th style="width: 150px; text-align: right;">QTY.</th>
+                        <th style="width: 100px; text-align: center;">ACTIONS</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><input type="text" class="table-input" value="RM-1020"></td>
+                        <td><input type="text" class="table-input" value="Titanium Dioxide"></td>
+                        <td><input type="number" class="table-input text-right" value="45.50"></td>
+                        <td class="text-center">
+                            <button class="btn-icon-delete"><i class="fa-solid fa-trash"></i></button>
+                        </td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="2" class="text-right fw-bold">Total Qty.</td>
+                        <td class="fw-bold text-right">45.50</td>
+                        <td></td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </div>
+</div>
+
+<div class="wizard-step-content" id="step-4-content" style="display: none;">
+    <h3 class="wizard-section-title"><i class="fa-solid fa-cubes text-orange"></i> Input Material Information</h3>
+    <div class="orange-table-wrapper">
+        <div class="table-responsive">
+            <table class="data-table orange-header-table">
+                <thead>
+                    <tr>
+                        <th>COMPONENT NAME</th>
+                        <th>SELECT</th>
+                        <th>LOWER LIMIT</th>
+                        <th>CONTENT (%)</th>
+                        <th>BOILING (LOWER)</th>
+                        <th>BOILING (UPPER)</th>
+                        <th>VAPOR PRESSURE</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td colspan="7" class="empty-state">No items to display</td></tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="table-pagination-footer session-display-left">
+            <div class="pagination-nav mini">
+                <button type="button"><i class="fa-solid fa-angles-left"></i></button>
+                <button type="button"><i class="fa-solid fa-angle-left"></i></button>
+                <button type="button"><i class="fa-solid fa-angle-right"></i></button>
+                <button type="button"><i class="fa-solid fa-angles-right"></i></button>
+            </div>
+            <div class="pagination-select">
+                <select id="itemsPerPageStep4">
+                    <option value="20">20</option>
+                </select> 
+                <span class="text-muted">items per page</span>
+            </div>
+            <div class="pagination-count text-muted">No items to display</div>
+        </div>
+    </div>
+</div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

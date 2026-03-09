@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OIA - SDS System</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="dashboard-body">
+
+    <div class="dashboard-container">
+        <div id="sidebar-placeholder"></div>
+
+        <main class="main-content">
+            
+            <header class="content-header table-header">
+                <div>
+                    <h2>Output SDS</h2>
+                </div>
+            </header>
+
+            <div class="action-bar new-layout">
+                <button class="btn-primary"><i class="fa-solid fa-plus"></i> New</button>
+                <button class="btn-secondary"><i class="fa-solid fa-file-export"></i> Export</button>
+                <button class="btn-secondary btn-req-overview"><i class="fa-solid fa-list-check"></i> Req Overview</button>
+            </div>
+
+            <div class="login-card search-card">
+                <h3 class="search-title">Search Criteria</h3>
+                <form class="search-form">
+                    <div class="search-form-grid-stacked">
+                        
+                        <div class="input-group-stacked">
+                            <label for="docNo">Document No</label>
+                            <input type="text" id="docNo" placeholder="Enter document no...">
+                        </div>
+                        
+                        <div class="input-group-stacked">
+                            <label for="prodName">Product Name</label>
+                            <input type="text" id="prodName" placeholder="Enter product name...">
+                        </div>
+                        
+                        <div class="input-group-stacked date-group">
+                            <label for="makeDateFrom">From Date</label>
+                            <input type="date" id="makeDateFrom" value="2026-01-01">
+                        </div>
+                        
+                        <div class="input-group-stacked date-group">
+                            <label for="dateTo">To Date</label>
+                            <input type="date" id="dateTo" value="2026-03-09">
+                        </div>
+
+                        <div class="search-buttons-bottom">
+                            <button type="submit" class="btn-primary"><i class="fa-solid fa-magnifying-glass"></i> Search</button>
+                            <button type="reset" class="btn-secondary-light"><i class="fa-solid fa-rotate-left"></i> Clear</button>
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+
+            <div class="login-card table-card borderless-table">
+                <table class="data-table data-table-sds">
+                    <thead>
+                        <tr>
+                            <th>No.</th>
+                            <th>Action</th>
+                            <th>DocRev No.</th>
+                            <th>Document No.</th>
+                            <th>Product Code</th>
+                            <th>Product Name</th>
+                            <th>Rev.</th>
+                            <th>Remark</th>
+                            <th>Make Date</th>
+                            <th>Update Date</th>
+                            <th>Update By</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td class="action-cell">
+                                <button class="btn-icon text-blue"><i class="fa-solid fa-print"></i></button>
+                            </td>
+                            <td><span class="docrev-text">2</span></td>
+                            <td>SDS-0060</td>
+                            <td>TH01081</td>
+                            <td>TH87-GD : 16KG</td>
+                            <td>0</td>
+                            <td>test</td>
+                            <td>2026-03-08<br>00:00:00</td>
+                            <td>2026-03-09<br>14:51:09</td>
+                            <td>999999</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td class="action-cell">
+                                <button class="btn-icon text-yellow"><i class="fa-solid fa-pencil"></i></button>
+                                <button class="btn-icon text-red"><i class="fa-solid fa-trash-can"></i></button>
+                                <button class="btn-icon text-blue"><i class="fa-solid fa-print"></i></button>
+                            </td>
+                            <td><span class="docrev-text">0</span></td>
+                            <td>SDS-0059</td>
+                            <td>TH01081</td>
+                            <td>TH87-GD : 16KG</td>
+                            <td>0</td>
+                            <td>test</td>
+                            <td>2026-03-08<br>00:00:00</td>
+                            <td>2026-03-09<br>14:21:10</td>
+                            <td>999999</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td class="action-cell">
+                                <button class="btn-icon text-yellow"><i class="fa-solid fa-pencil"></i></button>
+                                <button class="btn-icon text-red"><i class="fa-solid fa-trash-can"></i></button>
+                                <button class="btn-icon text-blue"><i class="fa-solid fa-print"></i></button>
+                            </td>
+                            <td><span class="docrev-text">0</span></td>
+                            <td>SDS-0058</td>
+                            <td>TH01081</td>
+                            <td>TH87-GD : 16KG</td>
+                            <td>0</td>
+                            <td>test</td>
+                            <td>2026-03-08<br>00:00:00</td>
+                            <td>2026-03-09<br>13:59:33</td>
+                            <td>999999</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <div class="pagination-container new-pagination-layout">
+                    <div class="pagination-items-per-page">
+                        <select id="itemsPerPage">
+                            <option value="20" selected>20</option>
+                        </select>
+                        <label for="itemsPerPage">items per page</label>
+                    </div>
+                    
+                    <div class="pagination-nav">
+                        <button class="pagination-btn"><i class="fa-solid fa-angles-left"></i></button>
+                        <button class="pagination-btn"><i class="fa-solid fa-angle-left"></i></button>
+                        <button class="pagination-btn active">1</button>
+                        <button class="pagination-btn">2</button>
+                        <button class="pagination-btn">3</button>
+                        <button class="pagination-btn"><i class="fa-solid fa-angle-right"></i></button>
+                        <button class="pagination-btn"><i class="fa-solid fa-angles-right"></i></button>
+                    </div>
+
+                    <div class="pagination-count">1 - 20 of 84 items</div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <div id="outputModal" class="modal-overlay">
+        <div class="modal-content">
+            
+            <div class="modal-header">
+                <h3><i class="fa-regular fa-file-lines"></i> Output Information</h3>
+                <button class="btn-close-icon"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            
+            <div class="modal-body">
+                <form class="modal-form">
+                    <div class="modal-form-grid">
+                        
+                        <div class="input-group-stacked">
+                            <label>DocID <span class="text-danger">*</span></label>
+                            <input type="text" value="SDS-0060" readonly>
+                        </div>
+                        
+                        <div class="input-group-stacked">
+                            <label>DocRev</label>
+                            <input type="text" placeholder="Auto-generated" disabled>
+                        </div>
+                        
+                        <div class="input-group-stacked">
+                            <label>Customer <span class="text-danger">*</span></label>
+                            <input type="text" placeholder="Customer">
+                        </div>
+                        
+                        <div class="input-group-stacked">
+                            <label>Country <span class="text-danger">*</span></label>
+                            <input type="text" placeholder="Country">
+                        </div>
+                        
+                        <div class="input-group-stacked">
+                            <label>Keep Year <span class="text-danger">*</span></label>
+                            <input type="text" placeholder="Keep Year">
+                        </div>
+                        
+                        <div class="input-group-stacked">
+                            <label>Submit Via</label>
+                            <select>
+                                <option value="" disabled selected>Select Submit Via...</option>
+                                <option value="email">Email</option>
+                                <option value="mail">Mail</option>
+                                <option value="system">Other</option>
+                            </select>
+                        </div>
+                        
+                    </div>
+                    
+                    <div class="input-group-stacked full-width">
+                        <label>Remark</label>
+                        <input type="text" placeholder="Remark">
+                    </div>
+                </form>
+            </div>
+            
+            <div class="modal-footer">
+                <button class="btn-success-fill"><i class="fa-solid fa-print"></i> Output Report</button>
+                <button class="btn-warning-fill"><i class="fa-solid fa-ban"></i> CLOSE</button>
+            </div>
+            
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

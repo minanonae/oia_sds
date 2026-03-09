@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OIA - SDS System</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="dashboard-body">
+
+    <div class="dashboard-container">
+        <div id="sidebar-placeholder"></div>
+
+        <main class="main-content">
+            
+            <header class="content-header table-header">
+                <div>
+                    <h2>GHS Label History Log</h2>
+                </div>
+            </header>
+
+            <div class="login-card search-card">
+                <form class="search-form">
+                    <div style="display: flex; align-items: center; gap: 20px; flex-wrap: wrap;">
+                        
+                        <h3 class="search-title" style="margin-bottom: 0;">Search Criteria</h3>
+                        
+                        <div class="input-group-stacked" style="margin-bottom: 0; flex-direction: row; align-items: center; gap: 10px;">
+                            <label style="font-weight: 600; font-size: 13.5px; color: #555; white-space: nowrap;">CP / FG Code :</label>
+                            <input type="text" style="width: 180px;" placeholder="">
+                        </div>
+                        
+                        <div class="input-group-stacked date-group" style="margin-bottom: 0; flex-direction: row; align-items: center; gap: 10px;">
+                            <label style="font-weight: 600; font-size: 13.5px; color: #555; white-space: nowrap;">Date (From) :</label>
+                            <input type="date" style="width: 150px;">
+                        </div>
+                        
+                        <div class="input-group-stacked date-group" style="margin-bottom: 0; flex-direction: row; align-items: center; gap: 10px;">
+                            <label style="font-weight: 600; font-size: 13.5px; color: #555; white-space: nowrap;">Date (To) :</label>
+                            <input type="date" style="width: 150px;">
+                        </div>
+
+                        <div class="search-buttons-bottom" style="margin-left: auto; margin-top: 0; display: flex; gap: 10px;">
+                            <button type="submit" class="btn-primary"><i class="fa-solid fa-magnifying-glass"></i> Search</button>
+                            <button type="reset" class="btn-secondary-light"><i class="fa-solid fa-rotate-left"></i> Clear</button>
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+
+            <div class="login-card table-card borderless-table">
+                <table class="data-table data-table-sds">
+                    <thead>
+                        <tr>
+                            <th>Date Print <i class="fa-solid fa-filter" style="font-size: 10px; margin-left: 5px; color: #888;"></i></th>
+                            <th>User <i class="fa-solid fa-filter" style="font-size: 10px; margin-left: 5px; color: #888;"></i></th>
+                            <th>IP <i class="fa-solid fa-filter" style="font-size: 10px; margin-left: 5px; color: #888;"></i></th>
+                            <th>CP Code <i class="fa-solid fa-filter" style="font-size: 10px; margin-left: 5px; color: #888;"></i></th>
+                            <th>CP Name <i class="fa-solid fa-filter" style="font-size: 10px; margin-left: 5px; color: #888;"></i></th>
+                            <th>Revision <i class="fa-solid fa-filter" style="font-size: 10px; margin-left: 5px; color: #888;"></i></th>
+                            <th>FG Code <i class="fa-solid fa-filter" style="font-size: 10px; margin-left: 5px; color: #888;"></i></th>
+                            <th>FG Name <i class="fa-solid fa-filter" style="font-size: 10px; margin-left: 5px; color: #888;"></i></th>
+                            <th>Language <i class="fa-solid fa-filter" style="font-size: 10px; margin-left: 5px; color: #888;"></i></th>
+                            <th>Size <i class="fa-solid fa-filter" style="font-size: 10px; margin-left: 5px; color: #888;"></i></th>
+                            <th>Qty. <i class="fa-solid fa-filter" style="font-size: 10px; margin-left: 5px; color: #888;"></i></th>
+                            <th>Remark <i class="fa-solid fa-filter" style="font-size: 10px; margin-left: 5px; color: #888;"></i></th>
+                        </tr>
+                    </thead>
+                    <tbody style="font-size: 13.5px;">
+                        <tr>
+                            <td style="text-align: center;">2026-03-03<br>17:12:06</td>
+                            <td>999999</td>
+                            <td>192.168.9.101</td>
+                            <td></td>
+                            <td>8Q423A (4 PASS): 16KG</td>
+                            <td>1</td>
+                            <td>8Q00041</td>
+                            <td>8Q423A (4 PASS): 16KG</td>
+                            <td>English</td>
+                            <td>Large</td>
+                            <td>1</td>
+                            <td>test</td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center;">2026-03-03<br>17:05:46</td>
+                            <td>999999</td>
+                            <td>192.168.9.101</td>
+                            <td></td>
+                            <td>53E-TH(U) : 5KG</td>
+                            <td>1</td>
+                            <td>5300022</td>
+                            <td>53E-TH(U) : 5KG</td>
+                            <td>English</td>
+                            <td>Large</td>
+                            <td>1</td>
+                            <td>test</td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center;">2026-03-02<br>18:54:15</td>
+                            <td>999999</td>
+                            <td>192.168.8.56</td>
+                            <td></td>
+                            <td>10F-5 : 16KG</td>
+                            <td>1</td>
+                            <td>00041</td>
+                            <td>10F-5 : 16KG</td>
+                            <td>English</td>
+                            <td>Small</td>
+                            <td>1</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center;">2026-02-26<br>15:06:34</td>
+                            <td>999999</td>
+                            <td>::1</td>
+                            <td></td>
+                            <td>10F-20 : 4KG</td>
+                            <td>2</td>
+                            <td>0010</td>
+                            <td>10F-20 : 4KG</td>
+                            <td>English</td>
+                            <td>Large</td>
+                            <td>1</td>
+                            <td>กรอกข้อมูลเพื่อเทส</td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center;">2026-02-26<br>01:20:58</td>
+                            <td>999999</td>
+                            <td>192.168.8.16</td>
+                            <td></td>
+                            <td>10F-5 : 16KG</td>
+                            <td>2</td>
+                            <td>00041</td>
+                            <td>10F-5 : 16KG</td>
+                            <td>English</td>
+                            <td>Small</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center;">2026-02-26<br>01:20:35</td>
+                            <td>999999</td>
+                            <td>192.168.8.16</td>
+                            <td></td>
+                            <td>10F-5 : 16KG</td>
+                            <td>2</td>
+                            <td>00041</td>
+                            <td>10F-5 : 16KG</td>
+                            <td>English</td>
+                            <td>Middle</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center;">2026-02-26<br>01:18:45</td>
+                            <td>999999</td>
+                            <td>192.168.8.16</td>
+                            <td></td>
+                            <td>10F-5 : 16KG</td>
+                            <td>2</td>
+                            <td>00041</td>
+                            <td>10F-5 : 16KG</td>
+                            <td>English</td>
+                            <td>Large</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center;">2026-02-25<br>13:54:05</td>
+                            <td>999999</td>
+                            <td>::1</td>
+                            <td></td>
+                            <td>10F-20 : 4KG</td>
+                            <td>1</td>
+                            <td>0010</td>
+                            <td>10F-20 : 4KG</td>
+                            <td>English</td>
+                            <td>Large</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center;">2026-02-24<br>14:26:15</td>
+                            <td>999999</td>
+                            <td>::1</td>
+                            <td></td>
+                            <td>10F-20 : 4KG</td>
+                            <td>1</td>
+                            <td>0010</td>
+                            <td>10F-20 : 4KG</td>
+                            <td>English</td>
+                            <td>Large</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center;">2026-02-24<br>&nbsp;</td>
+                            <td>999999</td>
+                            <td>::1</td>
+                            <td></td>
+                            <td>10F-20 : 4KG</td>
+                            <td>1</td>
+                            <td>0010</td>
+                            <td>10F-20 : 4KG</td>
+                            <td>English</td>
+                            <td>Large</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <div class="pagination-container new-pagination-layout" style="justify-content: flex-start; gap: 20px; padding: 15px 20px;">
+                    <div class="pagination-nav" style="flex-grow: 0;">
+                        <button class="pagination-btn"><i class="fa-solid fa-angles-left"></i></button>
+                        <button class="pagination-btn"><i class="fa-solid fa-angle-left"></i></button>
+                        <button class="pagination-btn active-dark" style="background-color: #333; color: #fff; border-color: #333;">1</button>
+                        <button class="pagination-btn"><i class="fa-solid fa-angle-right"></i></button>
+                        <button class="pagination-btn"><i class="fa-solid fa-angles-right"></i></button>
+                    </div>
+                    <div class="pagination-items-per-page">
+                        <select id="itemsPerPage" style="padding: 4px; border: 1px solid #ced4da; border-radius: 4px;">
+                            <option value="20" selected>20</option>
+                        </select>
+                        <label for="itemsPerPage" style="margin-left: 5px; color: #555;">items per page</label>
+                    </div>
+                    <div class="pagination-count" style="margin-left: auto; color: #555;">1 - 17 of 17 items</div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
